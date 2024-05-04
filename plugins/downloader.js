@@ -18,7 +18,7 @@ var song = res.data
 await message.client.sendMessage(message.jid, { text: `*_Downloading ${song.data.title}_*` },{ quoted: message})
 const aswinsparky = await (await fetch(`${song.data.downloadUrl}`)).buffer()
 await message.client.sendMessage(message.jid, { audio :aswinsparky,  mimetype:"audio/mpeg", contextInfo: { externalAdReply: {
-title: "𝗜𝗭𝗨𝗠𝗜 𝗫𝗗",
+title: "shamilmyran",
 body: "𝙎𝙤𝙣𝙜 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮",
 sourceUrl: "",
 mediaUrl: "",
@@ -57,7 +57,7 @@ thumbnailUrl: "https://i.imgur.com/whhHEyY.jpeg" }}, caption: `*${result.title}*
 
 command(
     {
-        pattern: "yta",
+        pattern: "play",
         fromMe: isPrivate,
         desc: "YouTube song Downloader",
         type: "downloader",
@@ -88,7 +88,7 @@ command(
     async (message, match) => {
         if (!match) return await message.reply("*_Need YouTube Url_*");
 await message.sendFromUrl(`https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${match}`, {contextInfo: { externalAdReply: {
-title: "𝗜𝗭𝗨𝗠𝗜 𝗫𝗗",
+title: "ᴍᴜɴᴀᴠɪʀ",
 body: "𝙑𝙞𝙙𝙚𝙤 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮",
 sourceUrl: "",
 mediaUrl: "",
